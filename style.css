@@ -47,6 +47,10 @@
     user-select: none;
 }
 
+#menuSusp {
+    transition: 0.3s;
+}
+
 .menuSuspenso ul{
     display: flex;
     flex-direction: column;
@@ -55,11 +59,6 @@
     right: 27px;
     background-color: #ffffff;
     user-select: none;
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-    overflow: hidden;
 }
 
 /* .menuDesktop{
@@ -319,7 +318,7 @@ footer a:hover{
     }
 
     .fotos img {
-        margin:10px;
+        margin:10px 20px 10px 20px;
         width: 135px;
     }
 
