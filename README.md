@@ -17,7 +17,7 @@
 </h4>
 <br>
 <h3 align = "center">
-<a href="https://matealves.github.io/paginasimples/" target="_blank">Acesse o site - clique aqui!
+<a href="https://matealves.github.io/modelodesite/" target="_blank">Acesse o site - clique aqui!
 </a> 
 </h3>
 
