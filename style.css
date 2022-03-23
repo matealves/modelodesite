@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial;
+}
+
+/* body {
+    margin-top: 50px;
+}  */
+
+
+.topo {
+    height: 50px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* opacity: 0.9; */
+}
+
+.topoIn {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logomarca {
+    line-height: 60px;
+    cursor: pointer;
+    /* filter: drop-shadow(1px 2px 8px #000000); */
+}
+
+.menu {
+    color: rgb(0, 0, 0);
+}
+
+.iconMenu p{
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;    font-weight: 500;
+    line-height: 50px;
+    user-select: none;
+}
+
+.menuSuspenso ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    right: 27px;
+    background-color: #ffffff;
+    user-select: none;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    overflow: hidden;
+}
+
+/* .menuDesktop{
+    display: none;
+} */
+
+.menuMobile {
+    display: none;
+}
+
+.menu ul, .menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.menu li:hover {
+    background-color: #FFc001;
+}
+
+.banner {
+    padding-top: 50px;
+    height: 300px;
+    background-color: #34a6ba;
+}
+
+.bannerIn {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bannerEsquerda {
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bannerDireita {
+    float: left;
+}
+
+.bannerDireita img{
+    width: 300px;
+}
+
+.fraseEfeito {
+    font-size: 40px;
+    color: #FFFFFF;
+    /* margin-top: 60px; */
+    font-weight: bold;
+}
+
+.frase2 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.botao button {
+    margin-top: 20px;
+    background-color: #FFc001;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.imgs button {
+    background-color: #FFc001;
+    border: none;
+    height: 40px;
+    width: 165px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.whats img{
+    position: fixed;
+    width: 50px;
+    bottom: 15px;
+    right: 10px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.whats:hover img{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.conteudoInterno {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.outrosProdutos {
+    height: 70px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fotos img {
+    margin: 10px;
+    width: 165px;
+    transition: 0.3s;
+}
+
+.fotos img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.imgs {
+    /* background-color: #533f02; */
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #34a6ba;
+    color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 400;
+    font-size: 12px;
+    height: 70px;
+    width: 100%;
+    /* position: fixed; */
+    bottom:0;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: rgb(255, 238, 0);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+@media (max-width: 805px){
+
+    .bannerDireita img{
+        margin-top: 15px;
+        width: 220px;
+    }
+
+    .bannerIn {
+        justify-content: center;
+        /* text-align: center; */
+    }
+
+    .menuDesktop {
+     display: none;
+    } 
+
+    .menuMobile {
+     display: block;
+    } 
+
+    .botao button {
+        height: 46px;
+        width: 165px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .fraseEfeito {
+        font-size: 28px;
+        /* margin-top: 40px; */
+        font-weight: bold;
+    }
+    
+    .frase2 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .banner {
+        display: flex;
+        height: 260px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px){
+
+    .bannerIn {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    }
+
+    .botao button {
+        height: 36px;
+        width: 135px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .fraseEfeito {
+        font-size: 18px;
+        /* margin-top: 40px; */
+        font-weight: bold;
+    }
+    
+    .frase2 {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .banner {
+        display: flex;
+        height: 180px;
+        flex-direction: column;
+    }
+
+    .fotos img {
+        margin:10px;
+        width: 135px;
+    }
+
+    .imgs button {
+        height: 36px;
+        width: 135px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .outrosProdutos {
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    .bannerDireita {
+        display: flex;
+    }
+
+    .bannerDireita img{
+        margin-top: 15px;
+        width: 156px;
+    }
+
+    .bannerEsquerda {
+        width: 60%;
+    }
+
+    .whats img{
+        width: 40px;
+        bottom: 25px;
+        right: 10px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+    
+    footer a:hover{
+        font-size: 11px;
+    }
+    
+    
+
+}
