@@ -40,7 +40,7 @@
 }
 
 .iconMenu p{
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     display: inline-block;    font-weight: 500;
     line-height: 50px;
@@ -135,6 +135,7 @@
 .botao button {
     margin-top: 20px;
     background-color: #FFc001;
+    color: black;
     border: none;
     height: 50px;
     width: 250px;
@@ -146,6 +147,7 @@
 
 .imgs button {
     background-color: #FFc001;
+    color: black;
     border: none;
     height: 40px;
     width: 165px;
@@ -283,7 +285,7 @@ footer a:hover{
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 415px){
 
     .bannerIn {
     justify-content: space-between;
@@ -300,7 +302,7 @@ footer a:hover{
     }
 
     .fraseEfeito {
-        font-size: 18px;
+        font-size: 17px;
         /* margin-top: 40px; */
         font-weight: bold;
     }
@@ -339,8 +341,8 @@ footer a:hover{
     }
 
     .bannerDireita img{
-        margin-top: 15px;
-        width: 156px;
+        margin-top: 5px;
+        width: 170px;
     }
 
     .bannerEsquerda {
